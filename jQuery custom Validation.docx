@@ -32,4 +32,5 @@ test5[] is the name of the input field. Here we have used simple message but in 
  or  activateValidation(‘myFormValidate’, { 'test5[]':'Custom Message For Checkbox', 'test2': { 'required':'This Field is So Important it\'s required', 'numeric':'This Message is for numeric field'}}, ’inline’);
  or  activateValidation(‘myFormValidate’, { 'test5[]':'Custom Message For Checkbox', 'test2': { 'required':'This Field is So Important it\'s required', 'numeric':'This Message is for numeric field'}});
 
+
 For more help look at the example.
