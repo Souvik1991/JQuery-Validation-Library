@@ -1,0 +1,31 @@
+jQuery custom Validation
+How to use It?
+This validation plugin is completely dependent on jQuery. So, at first include the jQuery script file(ver>8.0). After that include the jQuery.custom.validation.js file and also include the custom.validation.css file into your page.
+
+You can do blank, numeric/float, integer, email checking and at the same time you can validate radio and checkboxes. 
+
+for,
+Checking Type -> Class Name
+blank -> required 
+numeric -> numeric
+digit -> digit
+email -> email
+
+Now,
+1)	Give your form a id (example: <form name=”myform” id=”myFormValidate” action=”…>) .
+2)	Now write specific classes to your respective field of the page. For example to validate blank space of a textbox you should use require class. (Example:<input type=”text” class=”required” ../> )
+3)	Now write a script tag in this way…
+<script>
+	 	activateValidation(‘myFormValidate’);  // myFormValidate is the id of your from
+	 </script>
+And place this tag under where you have included two .js files.
+4)	 There is plenty of customization is available in this plugin you can choose error display style. There are two error display style is available one is default which is floating div style and another one is inline error. To use them follow the below path:
+1) For floating div  activateValidation(‘myFormValidate’, ’ floatingDiv’);  // myFormValidate is the id of your from
+2) For Inline div  activateValidation(‘myFormValidate’, ’ inline’);  // myFormValidate is the id of your from
+5) You can use customize message to display the error message to use customize message use this format 
+You can write simple message and also can define different message according to validation class name.
+Example:
+{ 'test5[]':'Custom Message For Checkbox', 'test2': { 'required':'This Field is So Important it\'s required', 'numeric':'This Message is for numeric field'}} 
+test5[] is the name of the input field. Here we have used simple message but in test2 we have used custom message for each validation type for required and for numeric, by doing this you can add multiple custom message otherwise default message will be displayed.
+
+For more help look at the example.
