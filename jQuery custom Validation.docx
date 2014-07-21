@@ -27,5 +27,9 @@ You can write simple message and also can define different message according to 
 Example:
 { 'test5[]':'Custom Message For Checkbox', 'test2': { 'required':'This Field is So Important it\'s required', 'numeric':'This Message is for numeric field'}} 
 test5[] is the name of the input field. Here we have used simple message but in test2 we have used custom message for each validation type for required and for numeric, by doing this you can add multiple custom message otherwise default message will be displayed.
+6) The way to use this plugin along with custom message: 
+  activateValidation(‘myFormValidate’, { 'test5[]':'Custom Message For Checkbox', 'test2': { 'required':'This Field is So Important it\'s required', 'numeric':'This Message is for numeric field'}}, ’floatingDiv’);
+ or  activateValidation(‘myFormValidate’, { 'test5[]':'Custom Message For Checkbox', 'test2': { 'required':'This Field is So Important it\'s required', 'numeric':'This Message is for numeric field'}}, ’inline’);
+ or  activateValidation(‘myFormValidate’, { 'test5[]':'Custom Message For Checkbox', 'test2': { 'required':'This Field is So Important it\'s required', 'numeric':'This Message is for numeric field'}});
 
 For more help look at the example.
