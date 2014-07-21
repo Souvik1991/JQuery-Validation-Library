@@ -1,0 +1,16 @@
+div.error-holder{ position:absolute; -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transition: all .4s ease; transition:  all .4s ease; }
+div.error-holder.arrow:after { border-top: 7px solid rgb(240,63,3); border-left: 7px solid transparent; border-right: 7px solid transparent; content: ""; display: inline-block; left: 9px; position: absolute; }
+
+
+.error-holder>.container{ position:relative; width:100%; background-color:#f03f03; color:#ffffff; font-size:11px; min-width: 120px; border: 2px solid #ddd; box-shadow: 0 0 6px #000; -moz-box-shadow: 0 0 6px #000; -webkit-box-shadow: 0 0 6px #000; -o-box-shadow: 0 0 6px #000; padding: 4px 10px 4px 10px; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; cursor:pointer; }
+.error-holder>.container>.error-list, .error-list{ display:block; margin:0px !important; padding:0px !important; }
+.error-holder>.container>.error-list>li, .error-list>li{ list-style:none; display:block; }
+
+label.error{ display:block; }
+label.error, input.error{ color:#f03f03 !important; }
+input[type="text"].error, select.error, input[type="file"].error{ border:1px solid #f03f03; }
+
+label.error .error-list>li, .error-holder>.container{ font-size:11px; font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif; }
+label.error.hide, ul.error-list>li.hide, div.error-holder.hide{ display:none !important; }
+
+input.success, select.success{ color:#66CC66 !important; border:1px solid #66CC66; }

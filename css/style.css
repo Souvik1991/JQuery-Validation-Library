@@ -1,0 +1,12 @@
+table{ width:100%; border-collapse: collapse; }
+			th, td { padding: 5px; }
+			table tr>td:first-child{ width:30%; }
+			table tr>td:last-child{ width:70%; border-right: 1px solid #dddddd; }
+			table tr>td{ border-left: 1px solid #dddddd; border-top: 1px solid #dddddd; }
+			table tr:last-child>td{ border-bottom: 1px solid #dddddd; }
+			
+			.width100{ width:100%; }
+			
+			input, select{ padding:5px; }
+			
+			.error{ color:#f03f03; }
